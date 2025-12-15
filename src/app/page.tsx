@@ -7,8 +7,6 @@ import { GoogleReviews } from '@/components/GoogleReviews'
 import { FAQ } from '@/components/FAQ'
 import { MapSection } from '@/components/MapSection'
 
-export const revalidate = 0
-
 export default function Home() {
   return (
     <main>

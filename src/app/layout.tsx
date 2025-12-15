@@ -78,8 +78,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <StructuredData />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
       </head>
       <body className={`${montserrat.variable} ${oswald.variable} font-sans antialiased`}>
         <QuoteFormProvider>

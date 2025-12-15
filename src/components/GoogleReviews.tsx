@@ -6,14 +6,14 @@ import { Button } from '@/components/ui/button'
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const staticReviews = [
-  { author: 'Mike R.', relative_time: '2 weeks ago', rating: 5, text: 'Called in the morning, they came that afternoon. Took all the old furniture from our basement—couches, tables, an old treadmill. Fast, professional, and reasonably priced. Will definitely use again.' },
-  { author: 'Sarah T.', relative_time: '1 month ago', rating: 5, text: 'These guys are amazing! Had a ton of yard waste from cutting down some trees and they hauled it all away in no time. Great communication and showed up exactly when they said they would.' },
-  { author: 'David L.', relative_time: '3 weeks ago', rating: 5, text: 'Used them for a garage cleanout. 15 years of accumulated stuff gone in a few hours. They sorted through everything, donated what they could, and hauled the rest. Very eco-conscious which I appreciated.' },
-  { author: 'Jennifer M.', relative_time: '2 months ago', rating: 5, text: 'Hired them to remove an old hot tub from our backyard. They disconnected it, broke it down, and hauled it away. Made what seemed like a huge project incredibly easy. Highly recommend!' },
-  { author: 'Chris B.', relative_time: '1 week ago', rating: 5, text: 'Fair pricing, no surprises. They quoted me a price over the phone and stuck to it. Removed a bunch of construction debris from my renovation. Would hire again in a heartbeat.' },
-  { author: 'Amanda K.', relative_time: '1 month ago', rating: 5, text: 'Used them for an estate cleanout after my father passed. They were incredibly respectful and patient as we sorted through everything. Found items we wanted to keep and handled the rest with care.' },
-  { author: 'Tom H.', relative_time: '3 weeks ago', rating: 5, text: 'Same-day service and great prices. Had an old refrigerator and washer/dryer that needed to go. They handled the heavy lifting and made sure everything was disposed of properly.' },
-  { author: 'Lisa P.', relative_time: '2 weeks ago', rating: 5, text: 'Moving out of state and needed to get rid of a lot of stuff quickly. They came out, gave us a fair quote, and had everything loaded up in under two hours. Lifesavers!' },
+  { author: 'Mike R.', relative_time: '2 weeks ago', rating: 5, text: 'Our AC stopped working on the hottest day of July. Called them and they had a tech out within 2 hours. Fixed the issue quickly and explained everything. Fair price, no pressure. Highly recommend!' },
+  { author: 'Sarah T.', relative_time: '1 month ago', rating: 5, text: 'Had them install a new furnace before winter hit. The crew was professional, cleaned up after themselves, and the new system works great. Our heating bills are noticeably lower now.' },
+  { author: 'David L.', relative_time: '3 weeks ago', rating: 5, text: 'Used them for annual HVAC maintenance. Tech was knowledgeable and thorough. Found a small issue before it became a big problem. Great preventive service at a reasonable price.' },
+  { author: 'Jennifer M.', relative_time: '2 months ago', rating: 5, text: 'Our heat pump was making strange noises. They diagnosed the problem accurately and had the parts to fix it same day. Very impressed with their expertise and efficiency.' },
+  { author: 'Chris B.', relative_time: '1 week ago', rating: 5, text: 'Honest company. They could have sold me a new AC unit but instead recommended a repair that cost a fraction. System has been running perfectly since. Will use them for all our HVAC needs.' },
+  { author: 'Amanda K.', relative_time: '1 month ago', rating: 5, text: 'Emergency furnace repair in January - they answered the phone at 10pm and had someone here by midnight. Saved us from a very cold night. These guys are the real deal.' },
+  { author: 'Tom H.', relative_time: '3 weeks ago', rating: 5, text: 'Just had a new AC system installed. From the estimate to final installation, everything was professional. The techs explained how to use the new thermostat and answered all my questions.' },
+  { author: 'Lisa P.', relative_time: '2 weeks ago', rating: 5, text: 'Best HVAC company in Boise. Fast response, fair prices, quality work. They serviced both our AC and furnace and everything runs perfectly now. Friendly staff too!' },
 ]
 
 export function GoogleReviews() {
@@ -78,7 +78,7 @@ export function GoogleReviews() {
         </div>
         {staticReviews.length > reviewsPerPage && <div className="flex justify-center gap-2 mt-8">{Array.from({ length: Math.ceil(staticReviews.length / reviewsPerPage) }).map((_, idx) => <button key={idx} onClick={() => setCurrentIndex(idx * reviewsPerPage)} className={`w-2 h-2 rounded-full transition-all ${Math.floor(currentIndex / reviewsPerPage) === idx ? 'bg-light-blue w-8' : 'bg-gray-300 hover:bg-gray-400'}`} />)}</div>}
         <div className="flex flex-row gap-4 justify-center mt-12">
-          <Button asChild size="lg" className="bg-ub-yellow hover:bg-ub-yellow/90 text-black font-bold text-lg px-10 py-6 rounded-lg uppercase border-4 border-ub-yellow"><a href="tel:2083611982"><span className="md:hidden">Call Now</span><span className="hidden md:inline">(208) 361-1982</span></a></Button>
+          <Button asChild size="lg" className="bg-ub-yellow hover:bg-ub-yellow/90 text-black font-bold text-lg px-10 py-6 rounded-lg uppercase border-4 border-ub-yellow"><a href="tel:2085059352"><span className="md:hidden">Call Now</span><span className="hidden md:inline">(208) 505-9352</span></a></Button>
         </div>
       </div>
     </section>

@@ -7,10 +7,10 @@ import { useQuoteForm } from '@/context/QuoteFormContext'
 import Link from 'next/link'
 
 const services = [
-  { icon: Snowflake, title: 'AC Repair & Installation', description: 'Keep cool all summer. We fix any AC problem and install new systems with expert precision.', href: '/ac-repair' },
-  { icon: Flame, title: 'Heating & Furnace', description: 'Stay warm when it matters. Furnace repairs, replacements, and tune-ups you can count on.', href: '/heating-repair' },
-  { icon: Wrench, title: 'HVAC Maintenance', description: 'Prevent costly breakdowns. Regular maintenance keeps your system running efficiently year-round.', href: '/hvac-maintenance' },
-  { icon: ThermometerSun, title: '24/7 Emergency Service', description: 'No heat in January? AC out in July? We respond fast when you need us most.', href: '/emergency-hvac' },
+  { icon: Snowflake, title: 'AC Repair & Installation', description: 'Keep cool all summer. We fix any AC problem and install new systems with expert precision.', href: '/services/air-conditioning' },
+  { icon: Flame, title: 'Heating & Furnace', description: 'Stay warm when it matters. Furnace repairs, replacements, and tune-ups you can count on.', href: '/services/furnaces' },
+  { icon: Wrench, title: 'HVAC Maintenance', description: 'Prevent costly breakdowns. Regular maintenance keeps your system running efficiently year-round.', href: '/resources/maintenance-plans' },
+  { icon: ThermometerSun, title: '24/7 Emergency Service', description: 'No heat in January? AC out in July? We respond fast when you need us most.', href: '/services/air-conditioning/emergency-ac-repair' },
 ]
 
 export function ServicesGrid() {
