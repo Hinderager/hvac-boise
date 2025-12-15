@@ -18,23 +18,23 @@ export function Footer() {
           <div>
             <h4 className="text-xl font-bold mb-4 text-light-blue">Services</h4>
             <ul className="space-y-2">
-              <li><Link href="/ac-repair" className="text-white/80 hover:text-white transition-colors">AC Repair</Link></li>
-              <li><Link href="/ac-installation" className="text-white/80 hover:text-white transition-colors">AC Installation</Link></li>
-              <li><Link href="/heating-repair" className="text-white/80 hover:text-white transition-colors">Heating Repair</Link></li>
-              <li><Link href="/furnace-installation" className="text-white/80 hover:text-white transition-colors">Furnace Installation</Link></li>
-              <li><Link href="/hvac-maintenance" className="text-white/80 hover:text-white transition-colors">HVAC Maintenance</Link></li>
-              <li><Link href="/emergency-hvac" className="text-white/80 hover:text-white transition-colors">24/7 Emergency</Link></li>
+              <li><Link href="/services/air-conditioning/ac-repair" className="text-white/80 hover:text-white transition-colors">AC Repair</Link></li>
+              <li><Link href="/services/air-conditioning/ac-installation" className="text-white/80 hover:text-white transition-colors">AC Installation</Link></li>
+              <li><Link href="/services/heating/heater-repair" className="text-white/80 hover:text-white transition-colors">Heating Repair</Link></li>
+              <li><Link href="/services/furnaces/furnace-installation" className="text-white/80 hover:text-white transition-colors">Furnace Installation</Link></li>
+              <li><Link href="/resources/maintenance-plans" className="text-white/80 hover:text-white transition-colors">HVAC Maintenance</Link></li>
+              <li><Link href="/services/air-conditioning/emergency-ac-repair" className="text-white/80 hover:text-white transition-colors">24/7 Emergency</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-xl font-bold mb-4 text-light-blue">Service Areas</h4>
             <ul className="space-y-2">
-              <li><Link href="/boise" className="text-white/80 hover:text-white transition-colors">Boise</Link></li>
-              <li><Link href="/meridian" className="text-white/80 hover:text-white transition-colors">Meridian</Link></li>
-              <li><Link href="/nampa" className="text-white/80 hover:text-white transition-colors">Nampa</Link></li>
-              <li><Link href="/caldwell" className="text-white/80 hover:text-white transition-colors">Caldwell</Link></li>
-              <li><Link href="/eagle" className="text-white/80 hover:text-white transition-colors">Eagle</Link></li>
+              <li><Link href="/cities-served/boise" className="text-white/80 hover:text-white transition-colors">Boise</Link></li>
+              <li><Link href="/cities-served/meridian" className="text-white/80 hover:text-white transition-colors">Meridian</Link></li>
+              <li><Link href="/cities-served/nampa" className="text-white/80 hover:text-white transition-colors">Nampa</Link></li>
+              <li><Link href="/cities-served/caldwell" className="text-white/80 hover:text-white transition-colors">Caldwell</Link></li>
+              <li><Link href="/cities-served/eagle" className="text-white/80 hover:text-white transition-colors">Eagle</Link></li>
             </ul>
           </div>
 
@@ -64,9 +64,9 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex gap-4">
-              <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center"><Facebook className="h-5 w-5" /></span>
-              <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center"><Instagram className="h-5 w-5" /></span>
-              <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center"><Linkedin className="h-5 w-5" /></span>
+              <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center" aria-label="Facebook"><Facebook className="h-5 w-5" aria-hidden="true" /></span>
+              <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center" aria-label="Instagram"><Instagram className="h-5 w-5" aria-hidden="true" /></span>
+              <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center" aria-label="LinkedIn"><Linkedin className="h-5 w-5" aria-hidden="true" /></span>
             </div>
             <div className="text-center md:text-right">
               <p className="text-white/60 text-sm">&copy; {new Date().getFullYear()} Boise HVAC Pros. All rights reserved.</p>
