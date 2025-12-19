@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import { Montserrat, Oswald } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
@@ -82,6 +83,18 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
       </head>
       <body className={`${montserrat.variable} ${oswald.variable} font-sans antialiased`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-581QKP6ZE5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-581QKP6ZE5');
+          `}
+        </Script>
         <QuoteFormProvider>
           <Header />
           {children}
