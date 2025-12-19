@@ -62,6 +62,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: 'https://hvac-boise.com',
+  },
 }
 
 export const viewport: Viewport = {
@@ -84,7 +87,7 @@ export default function RootLayout({
       </head>
       <body className={`${montserrat.variable} ${oswald.variable} font-sans antialiased`}>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-581QKP6ZE5"
+          src="https://www.googletagmanager.com/gtag/js?id=G-46RY05JDNS"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -92,7 +95,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-581QKP6ZE5');
+            gtag('config', 'G-46RY05JDNS');
           `}
         </Script>
         <QuoteFormProvider>
